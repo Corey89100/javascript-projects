@@ -21,4 +21,4 @@ let milestomoon= Distancetothemoon * milesperkilometer;
 let hourstomoon= Distancetothemoon / shuttlespeed;
 let daystomoon= hourstomoon / 24;
 // Print the results of the trip to the moon below
-console.log(spaceshuttle + " will take " + daystomoon + "days to reach THY moon");
+console.log(spaceshuttle + " will take " + daystomoon + "days to reach THY moon")
