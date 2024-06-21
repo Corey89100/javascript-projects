@@ -13,3 +13,8 @@
 // add logic below to verify the weather status is clear
 
 // Verify shuttle launch can proceed based on above conditions
+
+let org = "  The LaunchCode Foundation ";
+let trimmed = org.trim();
+
+console.log(trimmed);
