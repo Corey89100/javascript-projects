@@ -8,6 +8,22 @@
 // 4. Below the function, define and initialize a variable to hold a string.
 // 5. Use console.log(reverseCharacters(myVariableName)); to call the function and verify that it correctly reverses the characters in the string.
 // 6. Optional: Use method chaining to reduce the lines of code within the function.
+/* function reverseCharacters(str){
+    let newString = str.spilt("").reverse().join();
+    return newString;
+}
+console.log(reverseCharacters("apple"));  */
+function reverseCharacters(str){
+  let arr = []
+    if(typeof(str)===Number); {
+      str = String(str);
+    }
+    let backwardsStr = str.split("").reverse().join("");
+    return backwardsStr;
+}
+console.log(reverseCharacters(123));
+
+
 
 // Part Two: Reverse Digits
 
@@ -26,14 +42,37 @@
 // 5. Return the final, reversed array.
 // 6. Be sure to print the results from each test case in order to verify your code.
 
-let arrayTest1 = ['apple', 'potato', 'Capitalized Words'];
+let arrayTest1 = ['apple', 'potato', 'Capitalized Words', 'At'];
 let arrayTest2 = [123, 8897, 42, 1168, 8675309];
 let arrayTest3 = ['hello', 'world', 123, 'orange'];
 
+function completeReversal(arr){
+    let newArr=[]; 
+    for (i=0; i < arr.length; i++) {
+        if (arr[i].length < 3) {
+
+        newArr[i]=reverseCharacters(arr[i]);
+    }
+    return newArr
+}
+}
+console.log(completeReversal(arrayTest1)); 
 // Bonus Missions
+
 
 // 1. Have a clear, descriptive name like funPhrase.
 // 2. Retrieve only the last character from strings with lengths of 3 or less.
+function getStringsLessThan3(arr){
+    let newArr=[]; 
+    for (i=0; i < arr.length; i++) {
+        if (arr[i].length < 3) {
+        
+        newArr[i] = arr[i];
+    }
+    
+}   return newArr
+}
+console.log(getStringsLessThan3(arrayTest1)); 
 // 3. Retrieve only the first 3 characters from strings with lengths larger than 3.
 // 4. Use a template literal to return the phrase We put the '___' in '___'. Fill the first blank with the modified string, and fill the second blank with the original string.
 
