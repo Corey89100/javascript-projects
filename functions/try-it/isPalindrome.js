@@ -1,7 +1,7 @@
-function reverse(str) {
-   return str.split('').reverse().join('');
+let num = 42;
+
+function isEven (num) {
+   return num % 2 === 0;
 }
 
-function isPalindrome(str) {
-   return reverse(str) === str;
-}
+console.log(isEven(43));

@@ -34,7 +34,9 @@ function generatePassword(string1, string2) {
   let code = '';
 
   /// Code your Bonus Mission Solution here ///
-
+  while (numastronauts <= 6) {
+    numastronauts= input.question('please enter number of astronauts:');
+ }
   return code;
 }
 
